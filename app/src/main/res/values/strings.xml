@@ -7,4 +7,7 @@
     <string name="icSearch">Search</string>
     <string name="icFavorite">Favorite</string>
     <string name="icAccount">Account</string>
+    <string name="title_activity_test">TestActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
