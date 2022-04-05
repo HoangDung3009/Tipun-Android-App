@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".Register"
     android:orientation="vertical"
-    android:background="#fff"
     android:padding="20dp">
 
 
@@ -18,6 +17,16 @@
         android:backgroundTint="@color/cyan_500"
         android:src="@drawable/logo" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/taotkmoi"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,6 +35,44 @@
         android:backgroundTint="#00BCD4"
         android:orientation="vertical">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Họ"
+            android:layout_weight="1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#757575" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Tên"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#757575" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -35,7 +82,7 @@
             android:hint="Email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_email"
+                android:id="@+id/register_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColorHint="#757575" />
@@ -46,91 +93,58 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:background="@color/white"
-            android:hint="@string/hintPassword"
-            app:passwordToggleEnabled="true"
-            >
+            android:hint="Mật khẩu">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_password"
+                android:id="@+id/register_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:textColorHint="#757575" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Nhập lại mật khẩu">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_reenter_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:textColorHint="#757575"
-                />
+                android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
-            android:id="@+id/login_rememberCheckBox"
-            android:layout_width="wrap_content"
+            android:id="@+id/register_termCheckBox"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/rememberPassword"
+            android:text="Tôi chấp nhận các Điều khoản sử dụng và Chính sách bản mật"
             android:textSize="15sp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/login_loginBtn"
+            android:id="@+id/register_registerBtn"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="@color/cyan_500"
-            android:text="@string/login"
+            android:backgroundTint="@color/green"
+            android:text="@string/signup"
             android:textSize="20sp"
             app:cornerRadius="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"/>
-
-        <TextView
-            android:layout_marginTop="5dp"
-            android:id="@+id/login_forgotPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/white"
-            android:text="@string/forgetPassword"
-            android:textSize="15sp"
-            android:textColor="@color/black" />
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black"/>
-    <TextView
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:text="@string/bla1"/>
-
-
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-
-        <ImageView
-            android:id="@+id/login_facebookLogin"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:src="@drawable/facebook" />
-
-        <ImageView
-            android:id="@+id/login_googleLogin"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:src="@drawable/google" />
-    </LinearLayout>
 
     <TextView
         android:layout_marginTop="20dp"
@@ -139,18 +153,17 @@
         android:layout_gravity="center"
         android:textColor="@color/black"
         android:textSize="15sp"
-        android:text="@string/bla2"/>
+        android:text="Đã có tài khoản?"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_registerBtn"
+        android:id="@+id/register_loginBtn"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="@color/green"
-        android:text="@string/signup"
+        android:backgroundTint="@color/cyan_500"
+        android:text="@string/login"
         android:textSize="20sp"
         app:cornerRadius="10dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"/>
-
 </LinearLayout>
