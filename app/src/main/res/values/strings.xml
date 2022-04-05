@@ -10,4 +10,13 @@
     <string name="title_activity_test">TestActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hintUsername">Tên đăng nhập</string>
+    <string name="hintPassword">Mật khẩu</string>
+    <string name="rememberPassword">Ghi nhớ mật khẩu của tôi</string>
+    <string name="login">Đăng nhập</string>
+    <string name="forgetPassword">Quên mật khẩu?</string>
+    <string name="line_break"><![CDATA[<br/>]]></string>
+    <string name="bla1">Hoặc đăng nhập bằng</string>
+    <string name="bla2">Chưa phải thành viên?</string>
+    <string name="signup">Đăng ký</string>
 </resources>

@@ -9,8 +9,6 @@
         android:icon="@drawable/ic_baseline_search_24"
         android:id="@+id/miSearch"
         />
-    <item android:title=""
-        />
     <item android:title="@string/icFavorite"
         android:icon="@drawable/ic_baseline_favorite_24"
         android:id="@+id/miFavorite"/>
