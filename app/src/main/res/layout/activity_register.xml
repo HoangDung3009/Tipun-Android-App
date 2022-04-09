@@ -165,5 +165,6 @@
         android:textSize="20sp"
         app:cornerRadius="10dp"
         android:paddingTop="10dp"
-        android:paddingBottom="10dp"/>
+        android:paddingBottom="10dp"
+        android:onClick="navigateToLogin"/>
 </LinearLayout>
