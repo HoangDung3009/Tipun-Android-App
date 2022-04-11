@@ -18,10 +18,16 @@
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/menu/bottom_nav.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/menu/bottom_navbar.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudio/Tipun-Android-App/app/src/main/res/layout/actitvity_up_room_confirmation.xml" value="0.264" />
+        <entry key="..\:/AndroidStudio/Tipun-Android-App/app/src/main/res/layout/activity_login.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudio/Tipun-Android-App/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudio/Tipun-Android-App/app/src/main/res/layout/activity_register.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudio/Tipun-Android-App/app/src/main/res/layout/activity_up_room1.xml" value="0.27447916666666666" />
+        <entry key="..\:/AndroidStudio/Tipun-Android-App/app/src/main/res/layout/fragment_up_room_confirmation.xml" value="0.264" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
