@@ -12,6 +12,7 @@ import com.example.tipun_android_app.bottom_nav.FavoriteFragment;
 import com.example.tipun_android_app.bottom_nav.HomeFragment;
 import com.example.tipun_android_app.bottom_nav.SearchFragment;
 import com.example.tipun_android_app.databinding.ActivityMainBinding;
+import com.example.tipun_android_app.postRoom.up_room_confirmation;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
@@ -38,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
                 case R.id.miAccount:
                     replaceFragment(new AccountFragment());
+                    break;
+
+                case R.id.miPostRoom:
+                    replaceFragment(new up_room_confirmation());
                     break;
 
             }

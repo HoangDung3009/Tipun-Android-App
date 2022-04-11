@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".up_room_confirmation">
+    tools:context=".postRoom.up_room_confirmation">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -35,7 +35,7 @@
                 android:text="Xác nhận"
                 android:textColor="#121111"
                 android:textSize="20sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
@@ -100,34 +100,11 @@
                 android:layout_height="wrap_content">
             </EditText>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
 
         </LinearLayout>
 
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="*Bằng việc tiếp tục đăng tin nghĩa là bạn đã đồng ý với Điều khoản và Chính sách của chúng tôi"
@@ -137,6 +114,7 @@
         </TextView>
 
         <Button
+            android:layout_marginTop="20dp"
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="66dp"
