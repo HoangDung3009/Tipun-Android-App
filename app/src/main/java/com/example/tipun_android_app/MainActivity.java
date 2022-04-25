@@ -7,10 +7,10 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import com.example.tipun_android_app.bottom_nav.AccountFragment;
-import com.example.tipun_android_app.bottom_nav.FavoriteFragment;
-import com.example.tipun_android_app.bottom_nav.HomeFragment;
-import com.example.tipun_android_app.bottom_nav.SearchFragment;
+import com.example.tipun_android_app.fragment.AccountFragment;
+import com.example.tipun_android_app.fragment.FavoriteFragment;
+import com.example.tipun_android_app.fragment.HomeFragment;
+import com.example.tipun_android_app.fragment.SearchFragment;
 import com.example.tipun_android_app.databinding.ActivityMainBinding;
 import com.example.tipun_android_app.postRoom.up_room_confirmation;
 
