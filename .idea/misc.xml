@@ -3,38 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.313" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable/btn_lg.xml" value="0.313" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.313" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.313" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1615" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.313" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.313" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.313" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/drawable/ic_user_account.xml" value="0.313" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/actitvity_up_room_confirmation.xml" value="0.2462962962962963" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/activity_bottom_nav.xml" value="0.33" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/activity_login.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/activity_register.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/activity_splash_screen.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/activity_test.xml" value="0.3484375" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/activity_up_room1.xml" value="0.2462962962962963" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/fragment_account.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/fragment_dashboard.xml" value="0.13148148148148148" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/fragment_favorite.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/fragment_home.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/fragment_search.xml" value="0.3625" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/layout/fragment_up_room_confirmation.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/menu/bottom_nav.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3625" />
         <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/menu/bottom_navbar.xml" value="0.3625" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/layout/fragment_account.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/layout/fragment_search.xml" value="0.33" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/layout/search_filter.xml" value="0.25" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/layout/search_screen.xml" value="0.33" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/menu/bottom_nav.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
-        <entry key="..\:/Users/dotav/Tipun-Android-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.313" />
+        <entry key="..\:/Android/Tipun-Android-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.313" />
       </map>
     </option>
   </component>
