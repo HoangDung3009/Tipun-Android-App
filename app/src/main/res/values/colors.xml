@@ -9,4 +9,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#5AE65F</color>
+    <color name="darkorange">#FF8C00</color>
+    <color name="lightgrey">#D3D3D3</color>
 </resources>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#FFFFFFFF">
+
+
+    <TextView
+        android:id="@+id/labelFilter"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="Bộ lọc tìm kiếm"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/labelFilter"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/ic_baseline_close_24"
+        />
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/labelCategory"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/line1"
+        android:layout_marginTop="10dp"
+        android:text="Theo danh mục"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/category1"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/labelCategory"
+        android:text="Gần bạn dưới 2km"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/category2"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/labelCategory"
+        android:layout_toRightOf="@id/category1"
+        android:layout_marginLeft="20dp"
+        android:text="Giá dưới 1tr5/tháng"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/category3"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/category1"
+        android:text="Trọ có thang máy"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/category4"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/category1"
+        android:layout_toRightOf="@id/category1"
+        android:layout_marginLeft="20dp"
+        android:text="Có người ở ghép"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/showMoreCate"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/category3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Hiển thị nhiều hơn"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/expandCate"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/category4"
+        android:layout_toRightOf="@+id/showMoreCate"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/ic_baseline_chevron_right_24"
+        />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@id/expandCate"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/labelAddress"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="10dp"
+        android:text="Địa chỉ"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/address1"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/labelAddress"
+        android:text="Thanh Xuân"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/address2"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/labelAddress"
+        android:layout_toRightOf="@id/address1"
+        android:layout_marginLeft="20dp"
+        android:text="Đống Đa"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/address3"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/address1"
+        android:text="Hà Đông"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/address4"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/address1"
+        android:layout_toRightOf="@id/address1"
+        android:layout_marginLeft="20dp"
+        android:text="Hai Bà Trưng"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/showAddress"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/address3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Hiển thị nhiều hơn"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/expandAddress"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/address4"
+        android:layout_toRightOf="@+id/showAddress"
+        android:backgroundTint="@color/white"
+        android:drawableTop="@drawable/ic_baseline_chevron_right_24"
+        />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@id/expandAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/labelType"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="10dp"
+        android:text="Loại phòng"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/type1"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/labelType"
+        android:text="Phòng cho thuê"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/type2"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/labelType"
+        android:layout_toRightOf="@id/type1"
+        android:layout_marginLeft="20dp"
+        android:text="Phòng ở ghép"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/type3"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/type1"
+        android:text="Căn hộ"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/type4"
+        android:textSize="10sp"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/type1"
+        android:backgroundTint="@color/lightgrey"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/type3"
+        android:layout_marginLeft="20dp"
+        android:text="Kí túc xá/Homestay"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:textSize="10sp"
+        android:layout_marginTop="15dp"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/type4"
+        android:text="Thiết lập lại"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:layout_marginLeft="70dp"/>
+
+    <Button
+        android:id="@+id/apply"
+        android:textSize="10sp"
+        android:layout_marginTop="15dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/type4"
+        android:layout_toRightOf="@id/reset"
+        android:backgroundTint="@color/darkorange"
+        android:textColor="@color/white"
+        android:text="Áp dụng"
+        android:layout_marginLeft="30dp"/>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav" />
+</RelativeLayout>
