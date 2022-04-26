@@ -21,4 +21,7 @@
     <string name="signup">Đăng ký</string>
     <string name="taotkmoi">Tạo tài khoản mới</string>
     <string name="icPostRoom">Post Room</string>
+    <string name="p1_details">Phòng 1</string>
+    <string name="button_main">Phòng 1</string>
+    <string name="button_room1details">Phòng 1</string>
 </resources>
