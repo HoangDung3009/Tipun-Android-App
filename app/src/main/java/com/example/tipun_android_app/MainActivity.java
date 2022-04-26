@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.miPostRoom:
-                    replaceFragment(new up_room_confirmation());
+                    replaceFragment(new up_room1());
                     break;
 
             }

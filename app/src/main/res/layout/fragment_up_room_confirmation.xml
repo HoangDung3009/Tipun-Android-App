@@ -55,8 +55,9 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
+                android:layout_height="wrap_content"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp"></EditText>
 
         </LinearLayout>
 
@@ -76,8 +77,9 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
+                android:layout_height="wrap_content"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp"></EditText>
 
         </LinearLayout>
 
@@ -97,16 +99,17 @@
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </EditText>
+                android:layout_height="wrap_content"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp"></EditText>
 
 
         </LinearLayout>
 
         <TextView
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
             android:text="*Bằng việc tiếp tục đăng tin nghĩa là bạn đã đồng ý với Điều khoản và Chính sách của chúng tôi"
             android:textColor="#100F0F"
             android:textSize="16sp">
@@ -114,13 +117,14 @@
         </TextView>
 
         <Button
-            android:layout_marginTop="20dp"
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="66dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="#FDFCFC"
             android:text="Đăng tin"
-            android:textColor="#3F51B5" />
+            android:textColor="#3F51B5"
+            android:textSize="30sp" />
 
 
     </LinearLayout>
