@@ -3,25 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SearchFragment">
+    tools:context=".bottom_nav.SearchFragment">
 
-<!--     TODO: Update blank fragment layout -->
-<!---->
+    <!-- TODO: Update blank fragment layout -->
 
-<!--        <TextView-->
-<!--            android:id="@+id/location_selected"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:padding="10dp"-->
-<!--            android:text="Hà Nội"-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hello search fragment" />
 
-<!--            />-->
-
-<!--        <ImageView-->
-<!--            android:padding="6dp"-->
-<!--            android:id="@+id/img_drop_down"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="@drawable/ic_baseline_chevron_right_24" />-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="launchSecondActivity"
+        android:text="@string/button_room1details"
+        tools:ignore="UsingOnClickInXml" />
 
 </FrameLayout>
