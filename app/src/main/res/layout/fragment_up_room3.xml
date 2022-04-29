@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".up_room3"
+    tools:context=".fragments.up_room3"
     android:padding="10dp">
 
     <!-- TODO: Update blank fragment layout -->

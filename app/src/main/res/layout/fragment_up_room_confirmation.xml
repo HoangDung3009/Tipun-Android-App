@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".postRoom.up_room_confirmation">
+    tools:context=".fragments.up_room_confirmation">
 
     <!-- TODO: Update blank fragment layout -->
 

@@ -1,4 +1,4 @@
-package com.example.tipun_android_app.fragment;
+package com.example.tipun_android_app.fragments;
 
 import android.os.Bundle;
 

@@ -7,12 +7,12 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import com.example.tipun_android_app.fragment.AccountFragment;
-import com.example.tipun_android_app.fragment.FavoriteFragment;
-import com.example.tipun_android_app.fragment.HomeFragment;
-import com.example.tipun_android_app.fragment.SearchFragment;
+import com.example.tipun_android_app.fragments.AccountFragment;
+import com.example.tipun_android_app.fragments.FavoriteFragment;
+import com.example.tipun_android_app.fragments.HomeFragment;
+import com.example.tipun_android_app.fragments.SearchFragment;
 import com.example.tipun_android_app.databinding.ActivityMainBinding;
-import com.example.tipun_android_app.postRoom.up_room_confirmation;
+import com.example.tipun_android_app.fragments.up_room1;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;

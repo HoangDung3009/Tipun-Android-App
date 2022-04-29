@@ -3,13 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SearchFragment">
+    tools:context=".fragments.SearchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello search fragment" />
+<!--     TODO: Update blank fragment layout -->
+<!---->
+
+<!--        <TextView-->
+<!--            android:id="@+id/location_selected"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10dp"-->
+<!--            android:text="Hà Nội"-->
+
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:padding="6dp"-->
+<!--            android:id="@+id/img_drop_down"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_baseline_chevron_right_24" />-->
 
 </FrameLayout>
