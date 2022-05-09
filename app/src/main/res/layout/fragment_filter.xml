@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FilterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+    <!--Header-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/labelFilter"
+                    android:layout_width="321dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Bộ lọc tìm kiếm"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/ic_baseline_close_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <View
+                android:layout_below="@id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@color/black"/>
+    <!--Danh muc-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="556dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Theo danh mục"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="321dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:justifyContent="center"> <!-- this attribute is from the underlying FlexboxLayout -->
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/category1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:toggle_btnCornerRadius="0dp"
+                            app:toggle_text="Gần bạn dưới 2km" />
+
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/category2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:toggle_btnCornerRadius="0dp"
+                            android:layout_weight="1"
+                            app:toggle_text="Giá dưới 1tr5/tháng" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dp">
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/category3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:toggle_btnCornerRadius="0dp"
+                            app:toggle_text="Trọ có thang máy" />
+
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/category4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:toggle_btnCornerRadius="0dp"
+                            android:layout_weight="1"
+                            app:toggle_text="Có người ở ghép" />
+                    </TableRow>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:id="@+id/showMoreCate"
+                        android:layout_width="250dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/category3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Hiển thị nhiều hơn"
+                        android:textSize="20sp" />
+                </TableLayout>
+
+            </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+            <View
+                android:layout_below="@id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@color/black"/>
+
+    <!--Dia chi-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="556dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Địa chỉ"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="321dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:justifyContent="center"> <!-- this attribute is from the underlying FlexboxLayout -->
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/address1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:toggle_btnCornerRadius="0dp"
+                            app:toggle_text="Thanh Xuân" />
+
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/address2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:toggle_btnCornerRadius="0dp"
+                            android:layout_weight="1"
+                            app:toggle_text="Hà Đông" />
+
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/address3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:toggle_btnCornerRadius="0dp"
+                            android:layout_weight="1"
+                            app:toggle_text="Cầu Giấy" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dp">
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/address4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:toggle_btnCornerRadius="0dp"
+                            app:toggle_text="Hai Bà Trưng" />
+
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/address5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:toggle_btnCornerRadius="0dp"
+                            android:layout_weight="1"
+                            app:toggle_text="Nam Từ Liêm" />
+
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/address6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:toggle_btnCornerRadius="0dp"
+                            android:layout_weight="1"
+                            app:toggle_text="Đống Đa" />
+                    </TableRow>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:id="@+id/showMoreAddress"
+                        android:layout_width="250dp"
+                        android:layout_height="10dp"
+                        android:layout_below="@id/category3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text=""
+                        android:textSize="20sp" />
+                </TableLayout>
+
+            </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+            <View
+                android:layout_below="@id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@color/black"/>
+
+    <!--Loai phong-->
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="556dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Địa chỉ"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="321dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+                android:id="@+id/labelType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:justifyContent="center"> <!-- this attribute is from the underlying FlexboxLayout -->
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow>
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/type1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:toggle_btnCornerRadius="0dp"
+                            app:toggle_text="Thanh Xuân" />
+
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/type2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:toggle_btnCornerRadius="0dp"
+                            android:layout_weight="1"
+                            app:toggle_text="Hà Đông" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="10dp">
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/type3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            app:toggle_btnCornerRadius="0dp"
+                            app:toggle_text="Hai Bà Trưng" />
+
+                        <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                            android:id="@+id/type4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            app:toggle_btnCornerRadius="0dp"
+                            android:layout_weight="1"
+                            app:toggle_text="Nam Từ Liêm" />
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Thiết lập lại"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/apply"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/darkorange"
+                    android:text="Áp dụng"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

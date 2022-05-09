@@ -1,4 +1,4 @@
-package com.example.tipun_android_app.room_details;
+package com.example.tipun_android_app.fragments;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.tipun_android_app.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link RoomDetails_fragment#newInstance} factory method to
+ * Use the {@link FilterFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class RoomDetails_fragment extends Fragment {
+public class FilterFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class RoomDetails_fragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public RoomDetails_fragment() {
+    public FilterFragment() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class RoomDetails_fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment RoomDetails_fragment.
+     * @return A new instance of fragment FilterFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static RoomDetails_fragment newInstance(String param1, String param2) {
-        RoomDetails_fragment fragment = new RoomDetails_fragment();
+    public static FilterFragment newInstance(String param1, String param2) {
+        FilterFragment fragment = new FilterFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class RoomDetails_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_room_details_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_filter, container, false);
     }
 }

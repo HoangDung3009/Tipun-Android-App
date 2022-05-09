@@ -93,7 +93,7 @@
 
 
                     <EditText
-                        android:layout_width="280dp"
+                        android:layout_width="262dp"
                         android:layout_height="40sp"
                         android:inputType="number"
                         android:textColor="#0C0C0C"
@@ -126,7 +126,7 @@
 
 
                     <EditText
-                        android:layout_width="280dp"
+                        android:layout_width="262dp"
                         android:layout_height="40sp"
                         android:inputType="number"
                         android:textColor="#0C0C0C"
@@ -194,7 +194,7 @@
 
 
                     <EditText
-                        android:layout_width="280dp"
+                        android:layout_width="262dp"
                         android:layout_height="40sp"
                         android:inputType="number"
                         android:textColor="#090909"
@@ -226,7 +226,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:layout_width="280dp"
+                        android:layout_width="262dp"
                         android:layout_height="40sp"
                         android:textColor="#090909"
                         android:textSize="18sp">
@@ -257,7 +257,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:layout_width="280dp"
+                        android:layout_width="262dp"
                         android:layout_height="40sp"
                         android:inputType="number"
                         android:textColor="#090909"
@@ -289,7 +289,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:layout_width="240dp"
+                        android:layout_width="230dp"
                         android:layout_height="40sp"
                         android:inputType="number"
                         android:textColor="#090909"

@@ -16,7 +16,7 @@ public class User implements Serializable {
     private Date dob;
     private String phone;
     private String email;
-    private List<Room> rentedRooms;
+    private List<Room> postedRooms;
     private List<Room> favoriteRooms;
 
     @Override
@@ -30,7 +30,7 @@ public class User implements Serializable {
                 ", dob=" + dob +
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
-                ", rentedRooms=" + rentedRooms +
+                ", postedRooms=" + postedRooms +
                 ", favoriteRooms=" + favoriteRooms +
                 '}';
     }
@@ -99,12 +99,12 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public List<Room> getRentedRooms() {
-        return rentedRooms;
+    public List<Room> getPostedRooms() {
+        return postedRooms;
     }
 
-    public void setRentedRooms(List<Room> rentedRooms) {
-        this.rentedRooms = rentedRooms;
+    public void setPostedRooms(List<Room> postedRooms) {
+        this.postedRooms = postedRooms;
     }
 
     public List<Room> getFavoriteRooms() {
@@ -118,7 +118,7 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(Long id, String fullname, String username, String password, String gender, Date dob, String phone, String email, List<Room> rentedRooms, List<Room> favoriteRooms) {
+    public User(Long id, String fullname, String username, String password, String gender, Date dob, String phone, String email, List<Room> postedRooms, List<Room> favoriteRooms) {
         this.id = id;
         this.fullname = fullname;
         this.username = username;
@@ -127,7 +127,7 @@ public class User implements Serializable {
         this.dob = dob;
         this.phone = phone;
         this.email = email;
-        this.rentedRooms = rentedRooms;
+        this.postedRooms = postedRooms;
         this.favoriteRooms = favoriteRooms;
     }
 }

@@ -62,14 +62,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <CheckBox
-            android:id="@+id/login_rememberCheckBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/rememberPassword"
-            android:textSize="15sp" />
-
         <com.google.android.material.button.MaterialButton
             android:id="@+id/login_loginBtn"
             android:layout_width="180dp"
@@ -81,7 +73,7 @@
             app:cornerRadius="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:onClick="toMenu"
+            android:layout_marginTop="20dp"
             />
 
         <TextView

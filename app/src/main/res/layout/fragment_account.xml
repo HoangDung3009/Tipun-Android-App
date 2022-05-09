@@ -34,6 +34,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:id="@+id/account_fullname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tên tài khoản"

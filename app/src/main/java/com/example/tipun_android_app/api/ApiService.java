@@ -15,12 +15,9 @@ public interface ApiService {
     Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
 
 //    Link API: http://localhost:8080/api/
-    ApiService apiService =  new Retrofit.Builder()
-            .baseUrl("http://192.168.1.68:8080/api/")
+    Retrofit retrofit =  new Retrofit.Builder()
+            .baseUrl("http://10.170.77.169:8080/api/")
             .addConverterFactory(GsonConverterFactory.create(gson))
-            .build()
-            .create(ApiService.class);
+            .build();
 
-    @GET("users/")
-    Call<User> getAllUser();
 }

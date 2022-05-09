@@ -4,27 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".room_details.RoomDetails_fragment">
+    tools:context=".fragments.RoomDetails_fragment">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <FrameLayout
-        android:id="@+id/roomdetails"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </FrameLayout>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:menu ="@menu/bottom_nav" />
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="675dp">
+        android:layout_height="675dp"
+        >
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -54,10 +41,10 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="340dp"
+                    android:layout_width="319dp"
                     android:layout_height="match_parent"
-                    android:text="Phòng trọ Hà Đông giá rẻ"
                     android:layout_marginTop="10dp"
+                    android:text="Phòng trọ Hà Đông giá rẻ"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="20sp"

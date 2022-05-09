@@ -37,6 +37,7 @@
         </TextView>
 
         <Spinner
+            android:id="@+id/postroom_city"
             android:layout_width="match_parent"
             android:layout_height="40dp">
 
@@ -51,6 +52,7 @@
         </TextView>
 
         <Spinner
+            android:id="@+id/postroom_district"
             android:layout_width="match_parent"
             android:layout_height="43dp">
 
@@ -64,6 +66,7 @@
         </TextView>
 
         <Spinner
+            android:id="@+id/postroom_commune"
             android:layout_width="match_parent"
             android:layout_height="45dp">
 
@@ -72,28 +75,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tên đường">
+            android:text="Địa chỉ">
 
         </TextView>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:textColor="#0B0A0A"
-            android:textSize="18sp">
-
-        </EditText>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Số nhà">
-
-        </TextView>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
             android:textColor="#0B0A0A"
             android:textSize="18sp">
 
