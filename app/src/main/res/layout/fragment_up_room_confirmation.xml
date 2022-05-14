@@ -54,10 +54,11 @@
             </TextView>
 
             <EditText
+                android:id="@+id/postroom_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#0C0C0C"
-                android:textSize="18sp"></EditText>
+                android:textSize="18sp"/>
 
         </LinearLayout>
 
@@ -76,10 +77,11 @@
             </TextView>
 
             <EditText
+                android:id="@+id/postroom_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#0C0C0C"
-                android:textSize="18sp"></EditText>
+                android:textSize="18sp"/>
 
         </LinearLayout>
 
@@ -98,10 +100,11 @@
             </TextView>
 
             <EditText
+                android:id="@+id/postroom_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#0C0C0C"
-                android:textSize="18sp"></EditText>
+                android:textSize="18sp"/>
 
 
         </LinearLayout>
@@ -117,7 +120,7 @@
         </TextView>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/postroom_btnConfirm"
             android:layout_width="match_parent"
             android:layout_height="66dp"
             android:layout_marginTop="20dp"

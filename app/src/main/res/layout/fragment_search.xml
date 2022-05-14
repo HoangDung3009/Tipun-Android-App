@@ -29,24 +29,45 @@
 
             <Spinner
                 android:id="@+id/search_location_spinner"
-                android:layout_width="106dp"
+                android:layout_width="162dp"
                 android:layout_height="match_parent"
-                />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
-        <androidx.appcompat.widget.SearchView
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"/>
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_searchView"
+                android:layout_width="307dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:hint="Enter keyword"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/search_searchBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:drawableTop="@drawable/ic_baseline_search_24"
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcv_roomlist"
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_roomlist"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-    </LinearLayout>
 
+    </LinearLayout>
 
 </FrameLayout>

@@ -195,6 +195,33 @@ public class Room implements Serializable {
         this.roomUtilities = roomUtilities;
     }
 
+    @Override
+    public String toString() {
+        return "Room{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", phone_contact='" + phone_contact + '\'' +
+                ", acreage=" + acreage +
+                ", type='" + type + '\'' +
+                ", capacity=" + capacity +
+                ", gender_allow='" + gender_allow + '\'' +
+                ", price=" + price +
+                ", water_price=" + water_price +
+                ", electric_price=" + electric_price +
+                ", street_name='" + street_name + '\'' +
+                ", building='" + building + '\'' +
+                ", district='" + district + '\'' +
+                ", province='" + province + '\'' +
+                ", commune='" + commune + '\'' +
+                ", city='" + city + '\'' +
+                ", room_image=" + room_image +
+                ", postUser=" + postUser +
+                ", favoriteUsers=" + favoriteUsers +
+                ", roomUtilities=" + roomUtilities +
+                '}';
+    }
+
     public Room(Long id, String title, String description, String phone_contact, double acreage, String type, int capacity, String gender_allow, double price, double water_price, double electric_price, String street_name, String building, String district, String province, String commune, String city, List<RoomImages> room_image, User postUser, List<User> favoriteUsers, List<Utilities> roomUtilities) {
         this.id = id;
         this.title = title;

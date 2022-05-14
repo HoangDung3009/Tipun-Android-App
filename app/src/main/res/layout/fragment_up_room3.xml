@@ -20,16 +20,12 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/up_room3">
-
-            </ImageView>
+                android:src="@drawable/up_room3"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="29dp"
-                android:text="Thông tin hình ảnh và tiện ích">
-
-            </TextView>
+                android:text="Thông tin hình ảnh và tiện ích"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -39,14 +35,12 @@
                 <ImageView
                     android:layout_width="182dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/up_room4">
-                </ImageView>
+                    android:src="@drawable/up_room4"/>
 
                 <ImageView
                     android:layout_width="182dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/up_room5">
-                </ImageView>
+                    android:src="@drawable/up_room5"/>
 
 
             </LinearLayout>
@@ -59,14 +53,12 @@
                 <ImageView
                     android:layout_width="182dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/up_room6">
-                </ImageView>
+                    android:src="@drawable/up_room6"/>
 
                 <ImageView
                     android:layout_width="195dp"
                     android:layout_height="178dp"
-                    android:src="@drawable/up_room7">
-                </ImageView>
+                    android:src="@drawable/up_room7"/>
 
 
             </LinearLayout>
@@ -74,9 +66,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="29dp"
-                android:text="Hình ảnh">
-
-            </TextView>
+                android:text="Hình ảnh"/>
 
             <Button
                 android:layout_width="335dp"
@@ -87,16 +77,12 @@
                 android:paddingLeft="30dp"
                 android:text="Đăng ảnh"
                 android:textColor="#283CAA"
-                android:textSize="20sp">
-
-            </Button>
+                android:textSize="20sp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="29dp"
-                android:text="Tiện ích">
-
-            </TextView>
+                android:text="Tiện ích"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -104,24 +90,22 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:layout_width="170dp"
+                    android:id="@+id/postroom_wifi"
+                    android:layout_width="171dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:button="@drawable/ic_baseline_wc_24"
-                    android:onClick="checkone"
                     android:padding="10dp"
                     android:text="Wifi"
-                    android:textColor="#0B0B0B"></CheckBox>
+                    android:textColor="#0B0B0B" />
 
                 <CheckBox
+                    android:id="@+id/postroom_toiler"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:button="@drawable/ic_baseline_wc_24"
-                    android:onClick="checkone"
                     android:padding="10dp"
                     android:text="Nhà vệ sinh"
-                    android:textColor="#0B0B0B"></CheckBox>
+                    android:textColor="#0B0B0B"/>
 
             </LinearLayout>
 
@@ -131,24 +115,22 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/postroom_fridge"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:button="@drawable/fridge"
-                    android:onClick="checkone"
                     android:padding="10dp"
                     android:text="Tủ lạnh"
-                    android:textColor="#0B0B0B"></CheckBox>
+                    android:textColor="#0B0B0B"/>
 
                 <CheckBox
+                    android:id="@+id/postroom_ac"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:button="@drawable/air_conditioner"
-                    android:onClick="checkone"
                     android:padding="10dp"
                     android:text="Điều hòa"
-                    android:textColor="#0B0B0B"></CheckBox>
+                    android:textColor="#0B0B0B"/>
 
             </LinearLayout>
 
@@ -158,24 +140,22 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/postroom_closet"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:button="@drawable/wardrobe"
-                    android:onClick="checkone"
                     android:padding="10dp"
                     android:text="Tủ đồ"
-                    android:textColor="#0B0B0B"></CheckBox>
+                    android:textColor="#0B0B0B"/>
 
                 <CheckBox
+                    android:id="@+id/postroom_pet"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:button="@drawable/pet"
-                    android:onClick="checkone"
                     android:padding="10dp"
                     android:text="Thú cưng"
-                    android:textColor="#0B0B0B"></CheckBox>
+                    android:textColor="#0B0B0B"/>
 
             </LinearLayout>
 
@@ -185,37 +165,34 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/postroom_parking"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:button="@drawable/vehicle"
-                    android:onClick="checkone"
                     android:padding="10dp"
                     android:text="Chỗ để xe"
-                    android:textColor="#0B0B0B"></CheckBox>
+                    android:textColor="#0B0B0B"/>
 
                 <CheckBox
+                    android:id="@+id/postroom_freetime"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:button="@drawable/time"
-                    android:onClick="checkone"
                     android:padding="10dp"
                     android:text="Giờ giấc tự do"
-                    android:textColor="#0B0B0B"></CheckBox>
+                    android:textColor="#0B0B0B"/>
 
             </LinearLayout>
 
             <Button
+                android:id="@+id/postroom_btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="56dp"
                 android:layout_gravity="center"
                 android:backgroundTint="#FAF8F8"
                 android:gravity="center"
                 android:text="Tiếp theo >"
-                android:textColor="#3F51B5">
-
-            </Button>
+                android:textColor="#3F51B5"/>
 
         </LinearLayout>
 

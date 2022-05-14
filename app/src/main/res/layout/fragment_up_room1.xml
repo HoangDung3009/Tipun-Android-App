@@ -34,7 +34,7 @@
                     android:text="Thông tin phòng"
                     android:textColor="#090808"
                     android:textSize="16sp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -45,71 +45,39 @@
                 </TextView>
 
                 <RadioGroup
+                    android:id="@+id/postroom_roomType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <RadioButton
                         android:layout_width="match_parent"
-                        android:layout_height="32dp"
+                        android:layout_height="48dp"
                         android:text="Phòng ở ghép">
 
                     </RadioButton>
 
                     <RadioButton
                         android:layout_width="match_parent"
-                        android:layout_height="32sp"
+                        android:layout_height="48dp"
                         android:text="Nhà nguyên căn">
 
                     </RadioButton>
 
                     <RadioButton
                         android:layout_width="match_parent"
-                        android:layout_height="32sp"
+                        android:layout_height="48dp"
                         android:text="Căn hộ">
 
                     </RadioButton>
 
                     <RadioButton
                         android:layout_width="match_parent"
-                        android:layout_height="32sp"
+                        android:layout_height="48dp"
                         android:text="Nhà cho thuê">
 
                     </RadioButton>
 
                 </RadioGroup>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Số lượng phòng"
-                    android:textColor="#0E0E0E">
-
-                </TextView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-
-                    <EditText
-                        android:layout_width="262dp"
-                        android:layout_height="40sp"
-                        android:inputType="number"
-                        android:textColor="#0C0C0C"
-                        android:textSize="18sp">
-
-                    </EditText>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="phòng"
-                        android:textColor="#090909">
-
-                    </TextView>
-
-                </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -126,11 +94,13 @@
 
 
                     <EditText
+                        android:id="@+id/postroom_capacity"
                         android:layout_width="262dp"
-                        android:layout_height="40sp"
+                        android:layout_height="50dp"
                         android:inputType="number"
                         android:textColor="#0C0C0C"
-                        android:textSize="18sp">
+                        android:textSize="18sp"
+                        tools:ignore="SpeakableTextPresentCheck">
 
                     </EditText>
 
@@ -153,26 +123,27 @@
                 </TextView>
 
                 <RadioGroup
+                    android:id="@+id/postroom_genderAllow"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <RadioButton
                         android:layout_width="match_parent"
-                        android:layout_height="32sp"
+                        android:layout_height="48dp"
                         android:text="Tất cả">
 
                     </RadioButton>
 
                     <RadioButton
                         android:layout_width="match_parent"
-                        android:layout_height="32sp"
+                        android:layout_height="48dp"
                         android:text="Nam">
 
                     </RadioButton>
 
                     <RadioButton
                         android:layout_width="match_parent"
-                        android:layout_height="32sp"
+                        android:layout_height="48dp"
                         android:text="Nữ">
 
                     </RadioButton>
@@ -194,18 +165,21 @@
 
 
                     <EditText
+                        android:id="@+id/postroom_acreage"
                         android:layout_width="262dp"
-                        android:layout_height="40sp"
+                        android:layout_height="50dp"
                         android:inputType="number"
                         android:textColor="#090909"
-                        android:textSize="18sp">
+                        android:textSize="18sp"
+                        tools:ignore="SpeakableTextPresentCheck">
 
                     </EditText>
 
                     <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="m^2"
+                        android:text="m2"
                         android:textColor="#090909">
 
                     </TextView>
@@ -226,12 +200,12 @@
                     android:orientation="horizontal">
 
                     <EditText
+                        android:id="@+id/postroom_price"
                         android:layout_width="262dp"
-                        android:layout_height="40sp"
+                        android:layout_height="50dp"
                         android:textColor="#090909"
-                        android:textSize="18sp">
-
-                    </EditText>
+                        android:textSize="18sp"
+                        tools:ignore="SpeakableTextPresentCheck"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -243,37 +217,6 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Đặt cọc"
-                    android:textColor="#0E0E0E">
-
-                </TextView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:layout_width="262dp"
-                        android:layout_height="40sp"
-                        android:inputType="number"
-                        android:textColor="#090909"
-                        android:textSize="18sp">
-
-                    </EditText>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="VNĐ/phòng"
-                        android:textColor="#090909">
-
-                    </TextView>
-
-                </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -289,11 +232,54 @@
                     android:orientation="horizontal">
 
                     <EditText
+                        android:id="@+id/postroom_electricPrice"
                         android:layout_width="230dp"
-                        android:layout_height="40sp"
+                        android:layout_height="50dp"
                         android:inputType="number"
                         android:textColor="#090909"
-                        android:textSize="18sp">
+                        android:textSize="18sp"
+                        tools:ignore="SpeakableTextPresentCheck">
+
+                    </EditText>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VNĐ"
+                        android:textColor="#090909">
+
+                    </TextView>
+
+                    <CheckBox
+                        android:id="@+id/postroom_freeElectric"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miễn phí"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tiền nước"
+                    android:textColor="#0E0E0E">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/postroom_waterPrice"
+                        android:layout_width="230dp"
+                        android:layout_height="50dp"
+                        android:inputType="number"
+                        android:textColor="#090909"
+                        android:textSize="18sp"
+                        tools:ignore="SpeakableTextPresentCheck">
 
                     </EditText>
 
@@ -306,13 +292,15 @@
                     </TextView>
 
                     <CheckBox
+                        android:id="@+id/postroom_freeWater"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Miễn phí"></CheckBox>
+                        android:text="Miễn phí"/>
 
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/postroom_btn1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

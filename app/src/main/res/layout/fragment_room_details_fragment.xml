@@ -19,12 +19,13 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/back"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:id="@+id/back"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/ic_baseline_arrow_back_24"/>
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
             <androidx.viewpager2.widget.ViewPager2
@@ -36,30 +37,34 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="10dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="319dp"
-                    android:layout_height="match_parent"
+                    android:id="@+id/detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Phòng trọ Hà Đông giá rẻ"
-                    android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
 
                 <Button
+                    android:id="@+id/detail_favoriteBtn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:id="@+id/favBtn"
                     android:layout_gravity="left"
-                    android:background="@drawable/ic_baseline_red_24"/>
+
+                    android:background="@drawable/ic_baseline_red_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
                 </LinearLayout>
 
             <TextView
+                android:id="@+id/detail_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -81,6 +86,7 @@
                     android:background="@drawable/ic_baseline_location_on_24"/>
 
                 <TextView
+                    android:id="@+id/detail_address"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -102,6 +108,7 @@
                     android:background="@drawable/ic_baseline_local_phone_24"/>
 
                 <TextView
+                    android:id="@+id/detail_phone"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -123,6 +130,7 @@
                     android:background="@drawable/ic_baseline_area_24"/>
 
                 <TextView
+                    android:id="@+id/detail_acreage"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -261,31 +269,15 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/detail_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" - Phòng trọ sạch sẽ thoáng mát, có chỗ để xe. Có máy lạnh, wifi, giờ tự do"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" - Khu an ninh cao, yên tĩnh, dân trí cao"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" - Điện 3k5/số, nước 100k/ người"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Địa chỉ: Số 7, Thiền Quang"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ai cần, liên hệ anh Xuân Lộc SĐT như ở trên"/>
 
                 <Button
+                    android:id="@+id/detail_contactBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"

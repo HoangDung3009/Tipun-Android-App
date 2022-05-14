@@ -36,13 +36,15 @@
 
         </TextView>
 
-        <Spinner
+        <EditText
             android:id="@+id/postroom_city"
             android:layout_width="match_parent"
-            android:layout_height="40dp">
+            android:layout_height="48dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:inputType="text">
 
 
-        </Spinner>
+        </EditText>
 
         <TextView
             android:layout_width="match_parent"
@@ -51,12 +53,14 @@
 
         </TextView>
 
-        <Spinner
+        <EditText
             android:id="@+id/postroom_district"
             android:layout_width="match_parent"
-            android:layout_height="43dp">
+            android:layout_height="48dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:inputType="text">
 
-        </Spinner>
+        </EditText>
 
         <TextView
             android:layout_width="match_parent"
@@ -65,12 +69,14 @@
 
         </TextView>
 
-        <Spinner
+        <EditText
             android:id="@+id/postroom_commune"
             android:layout_width="match_parent"
-            android:layout_height="45dp">
+            android:layout_height="48dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:inputType="text">
 
-        </Spinner>
+        </EditText>
 
         <TextView
             android:layout_width="match_parent"
@@ -80,14 +86,18 @@
         </TextView>
 
         <EditText
+            android:id="@+id/postroom_address"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:textColor="#0B0A0A"
-            android:textSize="18sp">
+            android:textSize="18sp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:inputType="text">
 
         </EditText>
 
         <Button
+            android:id="@+id/postroom_btn2"
             android:layout_width="168dp"
             android:layout_height="62dp"
             android:layout_marginLeft="115dp"

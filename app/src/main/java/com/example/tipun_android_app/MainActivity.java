@@ -15,7 +15,8 @@ import com.example.tipun_android_app.fragments.HomeFragment;
 import com.example.tipun_android_app.fragments.SearchFragment;
 import com.example.tipun_android_app.databinding.ActivityMainBinding;
 import com.example.tipun_android_app.fragments.RoomDetails_fragment;
-import com.example.tipun_android_app.fragments.up_room1;
+import com.example.tipun_android_app.fragments.*;
+import com.example.tipun_android_app.models.Room;
 import com.example.tipun_android_app.models.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -79,13 +80,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.miPostRoom:
-                    up_room1 up_room1 = new up_room1();
+                    up_room1 upRoom1 = new up_room1();
                     Bundle b3 = new Bundle();
                     b3.putSerializable("CURRENT_USER", current_user);
-                    up_room1.setArguments(b3);
-                    replaceFragment(up_room1);
+                    upRoom1.setArguments(b3);
+                    replaceFragment(upRoom1);
                     break;
-
             }
 
             return true;
