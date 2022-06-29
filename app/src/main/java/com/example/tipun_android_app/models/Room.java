@@ -26,6 +26,7 @@ public class Room implements Serializable {
     private User postUser;
     private List<User> favoriteUsers;
     private List<Utilities> roomUtilities;
+    private boolean status;
 
     public Long getId() {
         return id;
@@ -222,7 +223,7 @@ public class Room implements Serializable {
                 '}';
     }
 
-    public Room(Long id, String title, String description, String phone_contact, double acreage, String type, int capacity, String gender_allow, double price, double water_price, double electric_price, String street_name, String building, String district, String province, String commune, String city, List<RoomImages> room_image, User postUser, List<User> favoriteUsers, List<Utilities> roomUtilities) {
+    public Room(Long id, String title, String description, String phone_contact, double acreage, String type, int capacity, String gender_allow, double price, double water_price, double electric_price, String street_name, String building, String district, String province, String commune, String city, List<RoomImages> room_image, User postUser, List<User> favoriteUsers, List<Utilities> roomUtilities, boolean status) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -244,8 +245,17 @@ public class Room implements Serializable {
         this.postUser = postUser;
         this.favoriteUsers = favoriteUsers;
         this.roomUtilities = roomUtilities;
+        this.status = status;
     }
 
     public Room() {
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 }

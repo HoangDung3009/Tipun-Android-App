@@ -105,6 +105,7 @@ public class Register extends AppCompatActivity {
                     }
                 });
             } else {
+                progressDialog.dismiss();
                 Toast.makeText(this, "Please check the term !!", Toast.LENGTH_SHORT).show();
             }
         } catch (Exception e){

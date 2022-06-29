@@ -25,6 +25,7 @@ import com.example.tipun_android_app.adapter.RoomAdapter;
 import com.example.tipun_android_app.api.RoomService;
 import com.example.tipun_android_app.dto.SearchModel;
 import com.example.tipun_android_app.models.Room;
+import com.example.tipun_android_app.models.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,11 +104,12 @@ public class SearchFragment extends Fragment {
         lvRoom.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                listRoom.clear();
-                Room room = (Room) roomAdapter.getItem(position);
-                RoomDetails_fragment roomDetail = new RoomDetails_fragment();
+                long id = roomAdapter.getItemId(position);
+                User user = (User) getArguments().get("CURRENT_USER");
+                DetailRoomFragment roomDetail = new DetailRoomFragment();
                 Bundle b1 = new Bundle();
-                b1.putSerializable("ROOM_DETAIL", room);
+                b1.putSerializable("CURRENT_USER", user);
+                b1.putSerializable("ROOM_DETAIL", id);
                 roomDetail.setArguments(b1);
                 replaceFragment(roomDetail);
             }

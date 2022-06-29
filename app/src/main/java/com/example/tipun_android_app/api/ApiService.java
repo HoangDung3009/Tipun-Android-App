@@ -16,8 +16,7 @@ public interface ApiService {
 
 //    Link API: http://localhost:8080/api/
     Retrofit retrofit =  new Retrofit.Builder()
-            .baseUrl("http://192.168.1.65:8080/api/")
+            .baseUrl("http://10.170.77.26:8080/api/")
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build();
-
 }

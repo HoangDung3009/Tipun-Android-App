@@ -30,38 +30,19 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="182dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/up_room4"/>
+                    android:id="@+id/postroom_img"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/img"
+                    android:layout_gravity="center"/>
 
-                <ImageView
-                    android:layout_width="182dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/up_room5"/>
 
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="182dp"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/up_room6"/>
-
-                <ImageView
-                    android:layout_width="195dp"
-                    android:layout_height="178dp"
-                    android:src="@drawable/up_room7"/>
-
-
-            </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
@@ -69,6 +50,7 @@
                 android:text="Hình ảnh"/>
 
             <Button
+                android:id="@+id/postroom_uploadBtn"
                 android:layout_width="335dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFFFFF"

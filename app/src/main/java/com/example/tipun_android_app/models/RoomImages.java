@@ -8,4 +8,8 @@ public class RoomImages implements Serializable {
     private Long id;
     private String url;
     private Room room;
+
+    public RoomImages(String url) {
+        this.url = url;
+    }
 }

@@ -1,26 +1,24 @@
 package com.example.tipun_android_app;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.tipun_android_app.fragments.AccountFragment;
-import com.example.tipun_android_app.fragments.FavoriteFragment;
 import com.example.tipun_android_app.fragments.HomeFragment;
 import com.example.tipun_android_app.fragments.SearchFragment;
 import com.example.tipun_android_app.databinding.ActivityMainBinding;
-import com.example.tipun_android_app.fragments.RoomDetails_fragment;
 import com.example.tipun_android_app.fragments.*;
-import com.example.tipun_android_app.models.Room;
 import com.example.tipun_android_app.models.User;
 
 public class MainActivity extends AppCompatActivity {
-
+    long backPressedTime = 0;
     ActivityMainBinding binding;
     Button button2;
 
@@ -32,6 +30,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void setCurrent_user(User current_user) {
         this.current_user = current_user;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 3000 > System.currentTimeMillis()) {
+            super.onBackPressed();
+            moveTaskToBack(true);
+        } else {
+            Toast.makeText(this, "Press again to exit", Toast.LENGTH_SHORT).show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
 
     @Override
@@ -60,16 +69,21 @@ public class MainActivity extends AppCompatActivity {
                     replaceFragment(homeFragment1);
                     break;
                 case R.id.miSearch:
-                    replaceFragment(new SearchFragment());
+                    SearchFragment searchFragment = new SearchFragment();
+                    Bundle b5 = new Bundle();
+                    b5.putSerializable("CURRENT_USER", current_user);
+                    searchFragment.setArguments(b5);
+                    replaceFragment(searchFragment);
                     break;
 
                 case R.id.miFavorite:
-                    RoomDetails_fragment roomDetails = new RoomDetails_fragment();
-                    Bundle b4 = new Bundle();
-                    b4.putSerializable("CURRENT_USER", current_user);
-                    roomDetails.setArguments(b4);
-                    replaceFragment(roomDetails);
+                    FavoriteFragment favoriteFragment = new FavoriteFragment();
+                    Bundle b6 = new Bundle();
+                    b6.putSerializable("CURRENT_USER", current_user);
+                    favoriteFragment.setArguments(b6);
+                    replaceFragment(favoriteFragment);
                     break;
+
 
                 case R.id.miAccount:
                     AccountFragment accountFragment = new AccountFragment();

@@ -57,8 +57,10 @@
                 android:id="@+id/postroom_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:textColor="#0C0C0C"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
@@ -80,8 +82,11 @@
                 android:id="@+id/postroom_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:textColor="#0C0C0C"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:inputType="phone"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
@@ -103,15 +108,17 @@
                 android:id="@+id/postroom_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:minHeight="48dp"
                 android:textColor="#0C0C0C"
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
         </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="51dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="*Bằng việc tiếp tục đăng tin nghĩa là bạn đã đồng ý với Điều khoản và Chính sách của chúng tôi"
             android:textColor="#100F0F"

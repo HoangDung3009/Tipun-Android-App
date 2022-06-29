@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.tipun_android_app.R;
 import com.example.tipun_android_app.models.Room;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -23,6 +24,7 @@ public class RoomAdapter extends BaseAdapter implements Filterable {
     private List<Room> filteredList;
     private Context context;
     private ItemFilter mFilter = new ItemFilter();
+    DecimalFormat df = new DecimalFormat("###,###");
 
     public RoomAdapter(Context context, List<Room> roomList) {
 //        super(context, 0, roomList);
@@ -32,22 +34,22 @@ public class RoomAdapter extends BaseAdapter implements Filterable {
     }
 
     public List<Room> getData(){
-        return  filteredList;
+        return  originalList;
     }
 
     @Override
     public int getCount() {
-        return filteredList.size();
+        return originalList.size();
     }
 
     @Override
     public Room getItem(int i) {
-        return filteredList.get(i);
+        return originalList.get(i);
     }
 
     @Override
     public long getItemId(int i) {
-        return filteredList.get(i).getId();
+        return originalList.get(i).getId();
     }
 
     @Override
@@ -70,7 +72,7 @@ public class RoomAdapter extends BaseAdapter implements Filterable {
         address.setText(s);
 
         TextView price = convertView.findViewById(R.id.tv_price);
-        String s1 = room.getPrice() + " vnđ";
+        String s1 = df.format(room.getPrice()) + " vnđ/tháng";
         price.setText(s1);
 
 

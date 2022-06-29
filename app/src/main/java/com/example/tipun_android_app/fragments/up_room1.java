@@ -45,12 +45,12 @@ public class up_room1 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_up_room1, container, false);
+        current_user = (User) getArguments().get("CURRENT_USER");
         init();
         return mView;
     }
 
     private void init() {
-        current_user = (User) getArguments().get("CURRENT_USER");
         roomType = mView.findViewById(R.id.postroom_roomType);
         capacity = mView.findViewById(R.id.postroom_capacity);
         genderAllow = mView.findViewById(R.id.postroom_genderAllow);
@@ -71,7 +71,6 @@ public class up_room1 extends Fragment {
     }
 
     private void moveToUpRoom2() {
-
             room = new Room();
             room.setPostUser(current_user);
             int roomTypeID = roomType.getCheckedRadioButtonId();
@@ -80,11 +79,12 @@ public class up_room1 extends Fragment {
             RadioButton rb1 = (RadioButton) roomType.getChildAt(idx);
             room.setType(rb1.getText().toString());
 
-            int genderID = roomType.getCheckedRadioButtonId();
-            View rd_genderAllow = roomType.findViewById(genderID);
-            int idx1 = roomType.indexOfChild(rd_genderAllow);
-            RadioButton rb2 = (RadioButton) roomType.getChildAt(idx1);
+            int genderID = genderAllow.getCheckedRadioButtonId();
+            View rd_genderAllow = genderAllow.findViewById(genderID);
+            int idx1 = genderAllow.indexOfChild(rd_genderAllow);
+            RadioButton rb2 = (RadioButton) genderAllow.getChildAt(idx1);
             room.setGender_allow(rb2.getText().toString());
+
 
             room.setCapacity(Integer.parseInt(capacity.getText().toString()));
             room.setAcreage(Double.parseDouble(acreage.getText().toString()));
